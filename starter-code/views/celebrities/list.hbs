@@ -1,0 +1,17 @@
+<h2>Celebrities</h2>
+
+{{#each celebrities}}
+
+{{name}}
+{{occupation}}
+{{carchPhrase}}
+<a href="/celebrities/{{id}}/edit">Edit</a>
+<form action="/celebrities/{{id}}/delete" method="POST">
+    <button>Delete</button>
+</form>
+<br>
+
+{{/each}}
+
+<br>
+<a href="/celebrities/create">Add a new drone</a>
