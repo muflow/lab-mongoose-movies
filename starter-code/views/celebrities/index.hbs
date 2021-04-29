@@ -3,8 +3,7 @@
 {{#each celebrities}}
 
 {{name}}
-{{occupation}}
-{{carchPhrase}}
+<a href="/celebrities/{{id}}">See celebrity details</a>
 <a href="/celebrities/{{id}}/edit">Edit</a>
 <form action="/celebrities/{{id}}/delete" method="POST">
     <button>Delete</button>
@@ -14,4 +13,4 @@
 {{/each}}
 
 <br>
-<a href="/celebrities/create">Add a new drone</a>
+<a href="/celebrities/create">Add a new celebrity</a>
